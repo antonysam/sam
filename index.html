@@ -94,7 +94,12 @@
 </html>-->
 <html>
 <head>
-<style> 
+<style>
+  .but{
+    cursor: pointer;
+    padding:14px 33px;
+    text-align:center;
+  }
 div {
     width: 100px;
     height: 100px;
@@ -102,6 +107,8 @@ div {
     direction : rtl;
     transition: width 2s;
 }
+  .sam {backgrond-color:red;}
+  
 
 
 
@@ -118,16 +125,14 @@ div:hover {
 </style>
 </head>
 <body>
-
+  <button class="but sam">home</button>
  <p><br>hello</p>
 <div id="div1">l</div><br>
 <div id="div2">ease</div><br>
 <div id="div3">ease-in</div><br>
 <div id="div4">ease-out</div><br>
-<div id="div5">ease-in-out</div><br>
-
-<p>Hover over the div elements above, to see the different speed curves.</p>
-
+<div id="div5">ease-in-out</div>
+</div>
 </body>
 </html>
 
