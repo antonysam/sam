@@ -95,6 +95,10 @@
 <html>
 <head>
 <style>
+  function myFunction() {
+    var x = new Date(document.lastModified);
+    document.getElementById("demo").innerHTML = x;
+}
   .but{
     cursor: pointer;
     padding:14px 33px;
@@ -127,6 +131,8 @@ div:hover {
 </style>
 </head>
 <body>
+  <button onclick="myFunction()">Try it</button>
+
   <button class="but sam">home</button>
  <p><br>hello</p>
 <div id="div1">l</div><br>
