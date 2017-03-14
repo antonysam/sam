@@ -92,7 +92,7 @@
   </h2>
 </body>
 </html>-->
-<!--<html>
+<html>
 <head>
   
 <style>
@@ -130,10 +130,14 @@ div:hover {
 </head>
 <body>
   <script>
-    function myFunction() {
-    var x = new Date(document.lastModified);
-    document.getElementById("demo").innerHTML = x;
-}
+    <script language="javascript"> 
+months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+var theDate = new Date(document.lastModified); 
+theDate.setTime((theDate.getTime()+(5000*60*60)) ) 
+with (theDate) { 
+document.write("<i>Last updated "+getDate()+' '+months[getMonth()]+' '+getYear()+' '+getHours()+':'+getMinutes()+" GMT</i>") 
+} 
+</script> 
   </script>
   <button onclick="myFunction()">Try it</button>
 
@@ -148,7 +152,7 @@ div:hover {
 </body>
 </html>
 -->
-<html>
+<!--<html>
 <body>
 
 <p>Click the button to display the date and time this document was last modified.</p>
@@ -167,5 +171,5 @@ function myFunction() {
 </script>
 
 </body>
-</html>
+</html>-->
 
