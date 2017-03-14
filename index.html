@@ -135,6 +135,21 @@ function myFunction(){
  var x = new Date(document.lastModified);
     document.getElementById("demo").innerHTML = x;
 }
+     function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    (h-12 + ":" + m + ":" + s);
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
 </script>
  
  
@@ -171,4 +186,18 @@ function myFunction() {
 
 </body>
 </html>-->
+<html>
+<head>
+<script>
 
+
+</script>
+
+</head>
+
+<body style="font-size:34px"  onload="startTime()">
+<br><br><br><br><br><br><br><br>
+<left><div id="txt"></div></left>
+
+</body>
+</html>
