@@ -131,10 +131,10 @@ div:hover {
 <body>
   
    <script language="JavaScript">
-
-date=Date()
-document.write Date(lastmodified)
-
+function myFunction(){
+ var x = new Date(document.lastModified);
+    document.getElementById("demo").innerHTML = x;
+}
 </script>
  
  
